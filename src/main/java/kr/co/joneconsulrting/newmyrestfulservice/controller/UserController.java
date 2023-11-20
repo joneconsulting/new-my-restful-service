@@ -1,6 +1,5 @@
 package kr.co.joneconsulrting.newmyrestfulservice.controller;
 
-import jakarta.validation.Valid;
 import kr.co.joneconsulrting.newmyrestfulservice.bean.User;
 import kr.co.joneconsulrting.newmyrestfulservice.dao.UserDaoService;
 import kr.co.joneconsulrting.newmyrestfulservice.exception.UserNotFoundException;
@@ -41,7 +40,7 @@ public class UserController {
 //        User savedUser = service.save(user);
 //    }
     @PostMapping("/users")
-    public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
+    public ResponseEntity<User> createUser(@RequestBody User user) {
         User savedUser = service.save(user);
 
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
