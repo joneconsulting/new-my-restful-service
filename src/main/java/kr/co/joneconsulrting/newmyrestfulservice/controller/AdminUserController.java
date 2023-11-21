@@ -3,7 +3,6 @@ package kr.co.joneconsulrting.newmyrestfulservice.controller;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
-import jakarta.validation.Valid;
 import kr.co.joneconsulrting.newmyrestfulservice.bean.AdminUser;
 import kr.co.joneconsulrting.newmyrestfulservice.bean.AdminUserV2;
 import kr.co.joneconsulrting.newmyrestfulservice.bean.User;

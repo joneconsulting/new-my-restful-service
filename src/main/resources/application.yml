@@ -8,3 +8,19 @@ server:
 spring:
   messages:
     basename: messages
+
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+
+  security:
+    user:
+      name: username
+      password: passw0rd
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
